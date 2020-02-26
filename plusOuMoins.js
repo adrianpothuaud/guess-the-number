@@ -95,6 +95,10 @@ function youWin() {
     
     // On affiche le nombre mystère
     $('#resText').show();
+
+    // On désactive le bouton abandon
+    $('#stopBtn').prop('disabled', true);
+    $('#stopBtn').hide();
 }
 
 /**
