@@ -106,40 +106,67 @@ function youWin() {
  */
 function gameOver() {
 
+    console.log("👾 GAME OVER BRO 👾");
+
+    // On supprime l'interval de temps
     clearInterval(timeLeftInterval);
+    // On met le temps restant à 0
     timeLeft = 0;
     setTimeLeftOnPage();
 
-    console.log("👾 GAME OVER BRO 👾");
-
+    // On change quelques propriétés CSS
+    // le temps restant rouge
+    // éléments de saisie grisés
     $('#timeLeftValue').css('color', 'red');
-    $('#guessInput').prop('disabled', true);
     $('#guessInput').css('background-color', 'grey');
-    $('#submitBtn').prop('disabled', true);
     $('#submitBtn').css('background-color', 'grey');
+
+    // On désactive la saisie
+    $('#guessInput').prop('disabled', true);
+    $('#submitBtn').prop('disabled', true);
+    $('#stopBtn').prop('disabled', true);
+
+    // On montre le message d'échec
     $('#nok').show();
+
+    // On enlève les indices et autres éléments qui ne sont plus utiles
     $('#info').hide();
     $('#guessInputLabel').hide();
     $('#more').hide();
     $('#less').hide();
+    $('#stopBtn').hide();
 }
 
+/**
+ * Ecoulement du temps restant
+ */
 function decreaseTimeLeft() {
+    // on enlève 1 seconde
     timeLeft--;
+    // Vérifications
     if (timeLeft >= 0) {
+        // Le temps restant est encore positif
         if (timeLeft < 20) {
+            // il ne reste plus beaucoup de temps
             console.log("🚑 Not so much time 🚑")
             $('#timeLeftValue').css('color', 'red');
         }
+        // Mise à jour du temps restant sur la vue html
         setTimeLeftOnPage();
     }
     else {
+        // plus de temps
         gameOver();
     }
 }
 
+// Code executé au chargement de la page
 console.log("🚀 Ready to play 🚀");
+// Initialisations
 var timeLeft = 60;
 var mystery = Math.floor(Math.random() * 100);
 $('#resText').html(mystery);
+// On lance un timer qui va lancer 
+// la fonction decreaseTimeLeft 
+// toutes les secondes
 var timeLeftInterval = setInterval(decreaseTimeLeft, 1000);

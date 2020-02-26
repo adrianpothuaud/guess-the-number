@@ -21,12 +21,12 @@
     font-size: medium;
 }
 
-.text:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.text:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.label:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.label:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .text-alert {
@@ -72,10 +72,6 @@
     font-size: xx-large;
 }
 
-.guess {
-
-}
-
 .label {
     padding: 10px;
     display: inline-block;
@@ -119,7 +115,7 @@
 }
 
 .input:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .clues {
@@ -190,10 +186,10 @@
 }
 
 .btn-submit:hover {
-    background-color: #f5f6f7; /* Green */
+    background-color: #f5f6f7;
     color: #102030;
     text-shadow: 1px 1px #133b02c5;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn-reload {
@@ -202,10 +198,10 @@
 }
 
 .btn-reload:hover {
-    background-color: #f5f6f7; /* Green */
+    background-color: #f5f6f7;
     color: #102030;
     text-shadow: 1px 1px #102030;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn-stop {
@@ -214,8 +210,8 @@
 }
 
 .btn-stop:hover {
-    background-color: #f5f6f7; /* Green */
+    background-color: #f5f6f7;
     color: #752906;
     text-shadow: 1px 1px #752906;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }

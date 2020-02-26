@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plus ou Moins ?</title>
-    <link rel="stylesheet" href="plusOuMoins.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="main">
     <!-- Bloc temps restant -->
     <div class="timeout" id="timeoutBloc">
-        <p class="text text-alert" id="timeLeftText">Temps restant &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="num num-big" id="timeLeftValue">60</span></p>
+        <p class="text text-alert" id="timeLeftText">Temps restant &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                class="num num-big" id="timeLeftValue">60</span></p>
     </div>
     <!-- Bloc du champs pour deviner le nombre mystère -->
     <div class="guess" id="guessBloc">
@@ -19,7 +22,8 @@
     </div>
     <!-- Bloc indices -->
     <div class="clues" id="cluesBloc">
-        <p class="text clue clue-info" id="info">C'est entre <span class="num num-big" id="clueLeft">0</span> et <span class="num num-big" id="clueRight">100</span> 😉</p>
+        <p class="text clue clue-info" id="info">C'est entre <span class="num num-big" id="clueLeft">0</span> et <span
+                class="num num-big" id="clueRight">100</span> 😉</p>
         <p class="text clue clue-less inactive" id="less">C'est moins !</p>
         <p class="text clue clue-more inactive" id="more">C'est plus !</p>
         <p class="text clue clue-ok inactive" id="ok">C'est BON tu as trouvé !</p>
@@ -36,6 +40,7 @@
     </div>
     <!-- Scripts (JQuery et méthodes du jeu) -->
     <script src="jquery.min.js"></script>
-    <script src="plusOuMoins.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
