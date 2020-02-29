@@ -5,9 +5,9 @@
     "main": "jquery.min.js",
     "scripts": {
         "start": "node src/server.js",
-        "test": "cypress run --record --key 853154d3-4424-4183-8e31-2927ed895984 --parallel",
+        "cy:run": "cypress run --record --key 853154d3-4424-4183-8e31-2927ed895984 --parallel",
         "cy:open": "cypress open",
-        "CI": "start-server-and-test start http://localhost:8080 test"
+        "CI": "start-server-and-test start http://localhost:8080 cy:run"
     },
     "repository": {
         "type": "git",

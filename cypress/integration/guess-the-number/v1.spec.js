@@ -4,7 +4,7 @@ context('Jeu du Nombre Mystère - v1', () => {
 
     beforeEach(() => {
 
-        cy.visit('https://adrianpothuaud.github.io/guess-the-number/')
+        cy.visit('http://localhost:8080/')
     });
 
     it('Le jeu me demandes de deviner un nombre', () => {
