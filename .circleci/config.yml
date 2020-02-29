@@ -5,4 +5,5 @@ workflows:
   build:
     jobs:
       - cypress/run:
-          record: true
+          name: v1 tests
+          command: npm run CI
