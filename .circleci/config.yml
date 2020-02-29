@@ -6,7 +6,10 @@ workflows:
     jobs:
       - cypress/run:
           name: v1 tests
-          command: npm run CI
-          store_artifacts: true
           start: npm start
           wait-on: 'http://localhost:8080'
+          group: smoke tests
+          browser: chrome
+          spec: cypress/integration/*
+          command: npm test
+          store_artifacts: true
