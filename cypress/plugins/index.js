@@ -16,17 +16,8 @@
  * @type {Cypress.PluginConfig}
  */
 
-module.exports = (on, config) => {
-    on('task', {
-        log(message) {
-            console.log(message)
-            return null
-        }
-    })
-    on('terminalLogs', {
-        log(message) {
-            console.log(message)
-            return null
-        }
-    })
+const getCompareSnapshotsPlugin = require('cypress-visual-regression/dist/plugin');
+
+module.exports = (on) => {
+    getCompareSnapshotsPlugin(on);
 };

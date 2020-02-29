@@ -1,3 +1,5 @@
 {
-  "projectId": "h51x5t"
+    "projectId": "h51x5t",
+    "screenshotsFolder": "cypress/snapshots/actual",
+    "trashAssetsBeforeRuns": true
 }
