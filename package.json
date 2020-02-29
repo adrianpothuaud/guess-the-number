@@ -1,0 +1,37 @@
+{
+    "name": "plusoumoins",
+    "version": "1.0.0",
+    "description": "[gh-Page](https://adrianpothuaud.github.io/guess-the-number/)",
+    "main": "jquery.min.js",
+    "scripts": {
+        "start": "node src/server.js",
+        "test": "cypress run --record --key 853154d3-4424-4183-8e31-2927ed895984 --parallel",
+        "cy:open": "cypress open",
+        "CI": "start-server-and-test start http://localhost:8080 test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/adrianpothuaud/guess-the-number.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/adrianpothuaud/guess-the-number/issues"
+    },
+    "homepage": "https://github.com/adrianpothuaud/guess-the-number#readme",
+    "devDependencies": {
+        "@testing-library/cypress": "^5.3.0",
+        "cypress": "^4.1.0",
+        "cypress-commands": "^1.0.0",
+        "cypress-dotenv": "^1.1.1",
+        "cypress-terminal-report": "^1.1.0",
+        "cypress-visual-regression": "^1.0.6",
+        "cypress-wait-until": "^1.6.1",
+        "dotenv": "^8.2.0",
+        "start-server-and-test": "^1.10.8"
+    },
+    "dependencies": {
+        "node-static": "^0.7.11"
+    }
+}
