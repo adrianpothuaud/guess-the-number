@@ -1,10 +1,5 @@
 {
     "projectId": "h51x5t",
     "screenshotsFolder": "cypress/snapshots/actual",
-    "trashAssetsBeforeRuns": true,
-    "reporter": "junit",
-    "reporterOptions": {
-        "mochaFile": "results/my-test-output.xml",
-        "toConsole": true
-    }
+    "trashAssetsBeforeRuns": true
 }

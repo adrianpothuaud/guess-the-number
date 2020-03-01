@@ -5,7 +5,7 @@
     "main": "jquery.min.js",
     "scripts": {
         "start": "node src/server.js",
-        "cy:run": "cypress run --record --key 853154d3-4424-4183-8e31-2927ed895984 --parallel",
+        "cy:run": "cypress run --record --key 853154d3-4424-4183-8e31-2927ed895984",
         "test": "cypress run --record --key 853154d3-4424-4183-8e31-2927ed895984",
         "cy:open": "cypress open",
         "CI": "start-server-and-test start http://localhost:8080 cy:run"
@@ -30,6 +30,9 @@
         "cypress-visual-regression": "^1.0.6",
         "cypress-wait-until": "^1.6.1",
         "dotenv": "^8.2.0",
+        "mocha": "^5.2.0",
+        "mochawesome": "^5.0.0",
+        "mochawesome-merge": "^4.0.1",
         "start-server-and-test": "^1.10.8"
     },
     "dependencies": {
