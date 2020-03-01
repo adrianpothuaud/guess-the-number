@@ -1,4 +1,4 @@
-[gh-Page](https://adrianpothuaud.github.io/guess-the-number/)
+[gh-Page](https://adrianpothuaud.github.io/guess-the-number/index)
 
 [![CircleCI](https://circleci.com/gh/adrianpothuaud/guess-the-number.svg?style=svg)](https://circleci.com/gh/adrianpothuaud/guess-the-number)
 
