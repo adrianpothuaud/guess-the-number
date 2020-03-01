@@ -24,13 +24,6 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-require('cypress-commands');
-import '@testing-library/cypress/add-commands'
-import 'cypress-wait-until';
-const compareSnapshotCommand = require('cypress-visual-regression/dist/command');
-
-compareSnapshotCommand();
-
 Cypress.Commands.add('getMystery', () => {
     cy.window().then((win) => {
         return win.mystery
@@ -49,8 +42,42 @@ Cypress.Commands.add('setMystery', (mystery) => {
     })
 })
 
-Cypress.Commands.add('setTimeLeft', (tl) => {
+Cypress.Commands.add('setTimeleft', (tl) => {
     cy.window().then((win) => {
         return win.timeLeft = tl
+    })
+})
+
+Cypress.Commands.add('reload', () => {
+    cy.get('#reloadBtn').click()
+})
+
+Cypress.Commands.add('abandon', () => {
+    cy.get('#stopBtn').click()
+})
+
+Cypress.Commands.add('tooHigh', () => {
+    cy.window().then((win) => {
+        win.$('#guessInput').val(win.mystery + 1);
+        win.$('#submitBtn').click();
+    })
+})
+
+Cypress.Commands.add('tooLow', () => {
+    cy.window().then((win) => {
+        win.$('#guessInput').val(win.mystery - 1);
+        win.$('#submitBtn').click();
+    })
+})
+
+Cypress.Commands.add('youWin', () => {
+    cy.window().then((win) => {
+        win.youWin()
+    })
+})
+
+Cypress.Commands.add('gameOver', () => {
+    cy.window().then((win) => {
+        win.gameOver()
     })
 })

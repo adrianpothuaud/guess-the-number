@@ -20,3 +20,9 @@ import './commands'
 // require('./commands')
 
 require('cypress-terminal-report').installSupport();
+require('cypress-commands');
+import '@testing-library/cypress/add-commands'
+import 'cypress-wait-until';
+const compareSnapshotCommand = require('cypress-visual-regression/dist/command');
+
+compareSnapshotCommand();
