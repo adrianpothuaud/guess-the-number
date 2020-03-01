@@ -8,10 +8,10 @@ workflows:
           name: v1 tests
           start: npm start
           wait-on: 'http://localhost:8080'
-          group: smoke tests
+          group: all tests
           browser: chrome
           spec: cypress/integration/*
           command: npm test
           store_artifacts: true
-          - store_test_results:
+          store_test_Results:
             path: cypress/results
